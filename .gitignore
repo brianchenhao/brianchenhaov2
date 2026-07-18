@@ -1,0 +1,46 @@
+# Local planning / AI context — never committed, never pushed
+PLAN-*.md
+PLANstage1portfolio.md
+CLAUDE.md
+.claude/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+frontend/portfolio-dist.zip
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Env files
+.env
+.env.*
+!.env.example
+!.dev.vars.example
+
+# Backend artefacts
+__pycache__/
+*.pyc
+.venv/
+venv/

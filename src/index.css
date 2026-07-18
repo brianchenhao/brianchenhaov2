@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Design tokens. Tailwind v4 picks these up automatically so you can write
+ * e.g. `bg-bg`, `text-fg`, `border-border`, `font-mono`, etc.
+ *
+ * The palette is intentionally narrow: one near-black background, two
+ * elevations, two text weights, one cool-blue accent for links and CTAs.
+ * Recruiters scan a portfolio in seconds — a restrained scheme keeps the
+ * eye on the content. */
+@theme {
+  --color-bg: #0a0a0c;
+  --color-surface: #16171d;
+  --color-border: #2e303a;
+  --color-fg: #e5e4e7;
+  --color-fg-muted: #9ca3af;
+  --color-accent: #60a5fa;
+
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
+}
+
+/* Page baseline. Each section below the hero scrolls; the hero owns the
+ * initial viewport. overflow-hidden is removed (Phase 1 had it) so the page
+ * scrolls past the hero into the rest of the portfolio. */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Anchor jumps land with a little breathing room below the sticky nav. */
+:where(section[id]) {
+  scroll-margin-top: 4rem;
+}

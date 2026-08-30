@@ -70,7 +70,11 @@ export function StaggerItem({
   const reduce = useReducedMotion()
   return (
     <motion.div
-      className={className}
+      /* min-w-0 first so a caller's className can still override it. Grid and
+       * flex children default to min-width:auto, which refuses to shrink below
+       * their content — on a narrow phone that pushed cards wider than their
+       * track and gave the whole page a horizontal scrollbar. */
+      className={`min-w-0 ${className ?? ''}`}
       variants={{
         hidden: { opacity: 0, y: reduce ? 0 : 20, scale: reduce ? 1 : 0.98 },
         show: {

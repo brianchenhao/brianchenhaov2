@@ -2,9 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brian Chen — software engineer</title>
+
+    <title>Brian Chen Jun Hao — Software Engineer</title>
+    <meta
+      name="description"
+      content="Final-year CS student at INTI International University. I build production software — GEYAM, an AI restaurant POS, and Antsilk, an ASGI security middleware on PyPI."
+    />
+    <link rel="canonical" href="https://brianchenhao.com/" />
+    <meta name="author" content="Brian Chen Jun Hao" />
+    <meta name="theme-color" content="#0a0a0c" />
+
+    <!-- Icons. The .ico carries 16/32/48; browsers that prefer PNG take the 96. -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph. Absolute URLs are required here — crawlers do not resolve
+     * relative paths against the page. -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Brian Chen Jun Hao" />
+    <meta property="og:url" content="https://brianchenhao.com/" />
+    <meta property="og:title" content="Brian Chen Jun Hao — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Final-year CS student at INTI International University. I build production software — GEYAM, an AI restaurant POS, and Antsilk, an ASGI security middleware on PyPI."
+    />
+    <meta property="og:image" content="https://brianchenhao.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Brian Chen Jun Hao — software engineer, final-year Computer Science student at INTI International University"
+    />
+    <meta property="profile:first_name" content="Brian" />
+    <meta property="profile:last_name" content="Chen Jun Hao" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Brian Chen Jun Hao — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Final-year CS student at INTI International University. I build production software — GEYAM, an AI restaurant POS, and Antsilk, an ASGI security middleware on PyPI."
+    />
+    <meta name="twitter:image" content="https://brianchenhao.com/og-image.png" />
+
+    <!-- Person schema. sameAs is the load-bearing part: it tells Google the
+     * GitHub / LinkedIn / Hugging Face accounts and this site are one entity,
+     * which is how a name query resolves to a single person rather than the
+     * thousands of other people called Brian Chen. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Brian Chen Jun Hao",
+        "alternateName": "Brian Chen",
+        "url": "https://brianchenhao.com/",
+        "image": "https://brianchenhao.com/og-image.png",
+        "jobTitle": "Software Engineer",
+        "description": "Final-year Computer Science student at INTI International University, working across mobile (Flutter), backend (FastAPI / SQLAlchemy), and applied AI (YOLO, LLM function calling).",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "INTI International University"
+        },
+        "knowsAbout": [
+          "Software Engineering",
+          "Flutter",
+          "FastAPI",
+          "Python",
+          "TypeScript",
+          "Applied Machine Learning",
+          "Computer Vision",
+          "Application Security"
+        ],
+        "sameAs": [
+          "https://github.com/brianchenhao",
+          "https://www.linkedin.com/in/brianchenhao",
+          "https://huggingface.co/brianchenhao"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

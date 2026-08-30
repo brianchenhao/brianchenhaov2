@@ -60,16 +60,22 @@ export function Nav() {
         className="absolute inset-x-0 bottom-0 h-[2px] origin-left bg-accent"
         style={{ scaleX: progress }}
       />
-      <div className="flex h-14 items-center justify-between px-6">
+      <div className="flex h-14 items-center justify-between gap-4 px-6">
         <a
           href="#hero"
-          className="text-sm font-semibold text-fg transition-colors hover:text-accent"
+          className="shrink-0 text-sm font-semibold text-fg transition-colors hover:text-accent"
         >
           brian chen
         </a>
-        <ul className="flex items-center gap-5">
+        {/* Seven uppercase labels are far wider than a phone. min-w-0 lets the
+         * list shrink inside the flex row and overflow-x-auto keeps the excess
+         * inside its own scroller — without both, the list forces the whole
+         * document wider than the viewport and every section renders shifted.
+         * pb-1.5 leaves room for the active underline, which overflow-x would
+         * otherwise clip. Scrollbar is hidden; the strip still swipes. */}
+        <ul className="flex min-w-0 items-center gap-5 overflow-x-auto pb-1.5 pt-1.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {SECTIONS.map(({ id, label }) => (
-            <li key={id} className="relative">
+            <li key={id} className="relative shrink-0">
               <a
                 href={`#${id}`}
                 className={

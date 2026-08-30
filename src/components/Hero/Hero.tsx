@@ -5,12 +5,11 @@ import type { Bone } from 'three'
 import { Character } from './Character'
 import { ChatBox } from './ChatBox'
 import { HeadTracker } from './HeadTracker'
+import { IdleHeadMotion } from './IdleHeadMotion'
 import { AimCameraAtHead } from './AimCameraAtHead'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { about } from '../../data/about'
 import { profile } from '../../data/profile'
-
-const FALLBACK_IMAGE = '/character-fallback.png'
 
 /* Word-by-word entrance for the headline. Each word rises out of an
  * overflow-clipped span so the reveal reads as a "lift" rather than a fade. */
@@ -42,6 +41,7 @@ function AnimatedHeadline({ text }: { text: string }) {
 
 export function Hero() {
   const isMobile = useIsMobile()
+  const reduce = useReducedMotion()
   const headBoneRef = useRef<Bone | null>(null)
 
   // Everything in the intro column enters in a single choreographed sequence.
@@ -108,28 +108,27 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.3, ease: 'easeOut' }}
-          className="relative h-[55vh] w-full md:h-screen md:w-1/2"
+          /* max-h caps the column on very tall viewports — a phone in desktop
+           * mode reports ~980x2100, which made this 2016px tall against a
+           * 417px width (0.21 aspect) and left the camera framing a sliver. */
+          className="relative h-[55vh] max-h-[560px] w-full md:h-screen md:max-h-[860px] md:w-1/2"
         >
-          {isMobile ? (
-            <div className="flex h-full w-full items-center justify-center">
-              <img
-                src={FALLBACK_IMAGE}
-                alt=""
-                aria-hidden="true"
-                className="scene-fallback max-h-full max-w-full object-contain"
-              />
-            </div>
-          ) : (
-            <Canvas camera={{ position: [0, 1.5, 3], fov: 28 }}>
-              <ambientLight intensity={0.6} />
-              <directionalLight position={[5, 5, 5]} intensity={0.9} />
-              <Suspense fallback={null}>
-                <Character headBoneRef={headBoneRef} />
-              </Suspense>
-              <AimCameraAtHead headBoneRef={headBoneRef} />
+          {/* The character renders on every device — only what drives the head
+           * changes, since a touch screen has no cursor to follow. dpr is
+           * capped so a 3x phone screen doesn't render 9x the pixels. */}
+          <Canvas camera={{ position: [0, 1.5, 3], fov: 28 }} dpr={[1, 2]}>
+            <ambientLight intensity={0.6} />
+            <directionalLight position={[5, 5, 5]} intensity={0.9} />
+            <Suspense fallback={null}>
+              <Character headBoneRef={headBoneRef} />
+            </Suspense>
+            <AimCameraAtHead headBoneRef={headBoneRef} />
+            {isMobile ? (
+              <IdleHeadMotion headBoneRef={headBoneRef} enabled={!reduce} />
+            ) : (
               <HeadTracker headBoneRef={headBoneRef} />
-            </Canvas>
-          )}
+            )}
+          </Canvas>
         </motion.div>
       </div>
 

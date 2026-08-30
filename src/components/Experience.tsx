@@ -12,6 +12,9 @@ const MONTHS = [
 function fmt(date: string): string {
   if (date === 'present') return 'present'
   const [y, m] = date.split('-')
+  // Fall back to the raw string for anything that isn't 'YYYY-MM' — free-text
+  // from the portal must never render the literal string "undefined".
+  if (!y || !m) return date
   return `${MONTHS[Number(m) - 1] ?? m} ${y}`
 }
 

@@ -1,0 +1,241 @@
+{
+  "profile": {
+    "name": "Brian Chen Jun Hao",
+    "role": "Software Engineer · Final-year CS",
+    "githubUrl": "https://github.com/brianchenhao",
+    "linkedinUrl": "https://www.linkedin.com/in/brianchenhao"
+  },
+  "about": {
+    "facts": [
+      {
+        "label": "focus",
+        "value": "AI plumbing, security middleware, multi-tenant systems"
+      },
+      {
+        "label": "stack",
+        "value": "Python / Dart / TypeScript"
+      },
+      {
+        "label": "looking for",
+        "value": "internships — SWE, AI/ML, backend infra"
+      }
+    ],
+    "tagline": "Final-year CS student shipping production tools — a multi-tenant AI POS and an open-source ASGI security middleware on PyPI.",
+    "paragraphs": [
+      "I'm Brian. Final-year Computer Science student at INTI International University, working across mobile (Flutter), backend (FastAPI / SQLAlchemy), and applied AI (YOLO, LLM function calling).",
+      "My flagship work is two things. GEYAM — an AI-powered multi-tenant restaurant POS with real-time food tray recognition via fine-tuned YOLO, plus an LLM assistant that answers natural-language questions about live sales through function calling. And Antsilk — a drop-in ASGI security middleware published to PyPI that protects FastAPI apps with rate limiting, WAF pattern scanning, JWT validation, and structured attack logging in two lines of install.",
+      "I like building things that fail loudly, ship in a single docker compose, and explain themselves in a README. CAPM-certified. Currently looking for internships in software engineering, AI/ML, or backend infrastructure."
+    ]
+  },
+  "skills": [
+    {
+      "items": [
+        "Python",
+        "Dart",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "Bash"
+      ],
+      "title": "languages"
+    },
+    {
+      "items": [
+        "Flutter",
+        "React",
+        "Vite",
+        "HTML",
+        "CSS",
+        "Tailwind"
+      ],
+      "title": "frontend"
+    },
+    {
+      "items": [
+        "FastAPI",
+        "SQLAlchemy",
+        "Alembic",
+        "PostgreSQL",
+        "Redis",
+        "Firebase"
+      ],
+      "title": "backend"
+    },
+    {
+      "items": [
+        "Docker",
+        "AWS Amplify",
+        "Cloudflare",
+        "Cloudflare Tunnel",
+        "DigitalOcean",
+        "Hostinger"
+      ],
+      "title": "cloud / infra"
+    },
+    {
+      "items": [
+        "YOLO (Ultralytics)",
+        "Qwen 2.5 LLM",
+        "function calling",
+        "Gemini API",
+        "Pandas",
+        "NumPy"
+      ],
+      "title": "ai / llm"
+    },
+    {
+      "items": [
+        "ASGI middleware",
+        "WAF pattern scanning",
+        "rate limiting",
+        "JWT / OAuth 2.0",
+        "CORS hardening"
+      ],
+      "title": "security"
+    },
+    {
+      "items": [
+        "Git",
+        "REST APIs",
+        "WebSockets",
+        "multi-tenant architecture",
+        "Billplz",
+        "Apros"
+      ],
+      "title": "tooling"
+    }
+  ],
+  "projects": [
+    {
+      "tag": "flagship",
+      "name": "GEYAM",
+      "links": {
+        "live": "https://geyam.com"
+      },
+      "stack": [
+        "Flutter",
+        "FastAPI",
+        "YOLO (Ultralytics)",
+        "Qwen 2.5 LLM",
+        "PostgreSQL",
+        "Billplz",
+        "Cloudflare"
+      ],
+      "tagline": "AI-powered multi-tenant restaurant POS with live vision + LLM assistant.",
+      "description": "Cross-platform POS with multi-tenant isolation, real-time food tray recognition via a fine-tuned YOLO model, and an LLM assistant (\"GEYAM, tell me sales today\") that uses function calling to query live transactions. Integrated Billplz payments and deployed end-to-end with custom DNS via Cloudflare."
+    },
+    {
+      "tag": "flagship",
+      "name": "Antsilk",
+      "links": {
+        "live": "https://antsilk.com"
+      },
+      "stack": [
+        "Python",
+        "ASGI",
+        "FastAPI",
+        "PyPI"
+      ],
+      "tagline": "Open-source ASGI security middleware for FastAPI — two lines to install.",
+      "description": "Drop-in Python library that protects ASGI apps with bundled rate limiting, WAF pattern scanning, JWT validation, and structured attack logging. Two-line install. Published to PyPI; deployed on Geyam in production for live attack telemetry."
+    },
+    {
+      "tag": "ongoing",
+      "name": "brianchenhao.com",
+      "links": {
+        "repo": "https://github.com/brianchenhao/brianchenhaov2"
+      },
+      "stack": [
+        "React 19",
+        "Vite",
+        "Motion",
+        "react-three-fiber",
+        "Supabase Edge Functions",
+        "Gemini 2.5 Flash",
+        "Vercel"
+      ],
+      "tagline": "This site, v2. 3D head-tracking character, scroll animation, Gemini-backed chat.",
+      "description": "Single-page React + Vite portfolio with a rigged GLB whose head bone follows the cursor and Motion-driven animation throughout. The chat box is backed by a Supabase Edge Function that rate-limits per IP via Postgres and proxies to Gemini — no servers to keep alive. Frontend hosted on Vercel."
+    },
+    {
+      "tag": "hackathon",
+      "name": "AI Medical chat — Great Malaysia AI Hackathon 2025",
+      "stack": [
+        "AWS Amplify",
+        "LLM",
+        "React"
+      ],
+      "tagline": "Hackathon: AI medical chat system deployed on AWS Amplify. Top 15 finalist.",
+      "description": "Co-built and deployed an AI medical chat system on AWS Amplify in a 48-hour team hackathon. Reached top 15 out of the open field."
+    },
+    {
+      "tag": "hackathon",
+      "name": "GboBuy — dEVMatch 2024",
+      "stack": [
+        "Aptos",
+        "Move",
+        "Smart Contracts",
+        "React"
+      ],
+      "tagline": "Hackathon: decentralised e-commerce on Aptos. 2nd place.",
+      "description": "Co-built GboBuy, a decentralised e-commerce platform on the Aptos blockchain with smart-contract-backed listings and escrow. Placed 2nd in a 48-hour team hackathon."
+    }
+  ],
+  "experience": [
+    {
+      "end": "2023-07",
+      "org": "Yokogawa",
+      "role": "Digital Strategy Intern",
+      "start": "2023-05",
+      "bullets": [
+        "Automated laptop provisioning scripts, cutting setup time from ~20 to ~5 minutes per machine.",
+        "Built update-notification flow that reduced reminder turnaround from ~45 to ~15 minutes per rollout.",
+        "Supported hardware procurement, including vendor sourcing and requisitions.",
+        "Resolved hardware, software, and network issues remotely (AnyDesk) and on-site."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "CAPM — Certified Associate in Project Management",
+      "year": 2026,
+      "issuer": "PMI"
+    },
+    {
+      "name": "AWS Academy Graduate — Generative AI Foundations",
+      "year": 2025,
+      "issuer": "AWS"
+    },
+    {
+      "name": "AWS Academy Graduate — Machine Learning for NLP",
+      "year": 2025,
+      "issuer": "AWS"
+    },
+    {
+      "name": "Artificial Intelligence Fundamentals",
+      "year": 2025,
+      "issuer": "IBM"
+    },
+    {
+      "name": "CCNA: Introduction to Networks",
+      "year": 2025,
+      "issuer": "Cisco"
+    }
+  ],
+  "extracurriculars": [
+    {
+      "end": "2024-12",
+      "org": "INTI Tech Club",
+      "role": "Treasurer",
+      "start": "2024-01",
+      "summary": "Managed club finances and coordinated external communications for tech events. Handled event planning end-to-end."
+    },
+    {
+      "end": "present",
+      "org": "Antsilk (open source)",
+      "role": "Maintainer",
+      "start": "2025-01",
+      "summary": "Maintain the Antsilk ASGI security middleware on PyPI — issue triage, release cuts, and production telemetry from the Geyam deployment."
+    }
+  ]
+}

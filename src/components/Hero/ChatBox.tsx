@@ -105,7 +105,10 @@ export function ChatBox() {
           maxLength={MAX_MESSAGE_LENGTH}
           placeholder="ask about a project, role, anything"
           aria-label="ask the bot a question"
-          className="flex-1 rounded-md border border-border bg-bg px-3 py-2 text-sm text-fg outline-none focus:border-accent"
+          /* min-w-0 lets the field shrink past the placeholder's intrinsic
+           * width; without it the long placeholder pushed the send button off
+           * the right edge on narrow phones. */
+          className="w-full min-w-0 flex-1 rounded-md border border-border bg-bg px-3 py-2 text-sm text-fg outline-none focus:border-accent"
           disabled={loading}
         />
         <motion.button

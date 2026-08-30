@@ -1,5 +1,8 @@
 // Certifications, newest first. Keep year-only granularity — month adds noise
 // without adding signal.
+// Managed from portal.brianchenhao.com via content.json.
+
+import content from './content.json'
 
 export type Certification = {
   name: string
@@ -10,30 +13,4 @@ export type Certification = {
   href?: string
 }
 
-export const certifications: Certification[] = [
-  {
-    name: 'CAPM — Certified Associate in Project Management',
-    issuer: 'PMI',
-    year: 2026,
-  },
-  {
-    name: 'AWS Academy Graduate — Generative AI Foundations',
-    issuer: 'AWS',
-    year: 2025,
-  },
-  {
-    name: 'AWS Academy Graduate — Machine Learning for NLP',
-    issuer: 'AWS',
-    year: 2025,
-  },
-  {
-    name: 'Artificial Intelligence Fundamentals',
-    issuer: 'IBM',
-    year: 2025,
-  },
-  {
-    name: 'CCNA: Introduction to Networks',
-    issuer: 'Cisco',
-    year: 2025,
-  },
-]
+export const certifications: Certification[] = content.certifications

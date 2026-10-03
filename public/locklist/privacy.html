@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LockList Privacy Policy</title>
+<meta name="description" content="Privacy policy for LockList, the Android app that shows your task list on the lock screen and syncs it with your task board.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://brianchenhao.com/locklist/privacy.html">
+<style>
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --fg: #18181b;
+    --muted: #52525b;
+    --border: #e4e4e7;
+    --accent: #1d4ed8;
+    --accent-soft: #eff6ff;
+    --code-bg: #f4f4f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0c;
+      --surface: #16171d;
+      --fg: #e5e4e7;
+      --muted: #9ca3af;
+      --border: #2e303a;
+      --accent: #60a5fa;
+      --accent-soft: #111a2b;
+      --code-bg: #1f2029;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+  header { margin-bottom: 28px; }
+  .app {
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .meta { margin: 0; color: var(--muted); font-size: 15px; }
+  h2 {
+    margin: 40px 0 10px;
+    padding-top: 8px;
+    font-size: 22px;
+    line-height: 1.3;
+    scroll-margin-top: 16px;
+  }
+  h3 { margin: 22px 0 6px; font-size: 18px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85em;
+    background: var(--code-bg);
+    padding: 1px 5px;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+  }
+  .summary {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px 6px;
+  }
+  .summary h2 { margin-top: 0; padding-top: 0; font-size: 19px; }
+  nav.toc {
+    margin: 24px 0 0;
+    padding: 14px 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    font-size: 15px;
+  }
+  nav.toc p { margin: 0 0 6px; font-weight: 600; }
+  nav.toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+  nav.toc li { margin-bottom: 4px; break-inside: avoid; }
+  .perms {
+    margin: 0 0 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .perm { padding: 14px 18px; border-top: 1px solid var(--border); }
+  .perm:first-child { border-top: 0; }
+  .perm dt { font-weight: 600; }
+  .perm dt code { font-weight: 400; margin-left: 4px; }
+  .perm dd { margin: 4px 0 0; color: var(--muted); }
+  .contact {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 16px 20px 2px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    main { padding-top: 28px; }
+    h1 { font-size: 27px; }
+    h2 { font-size: 20px; }
+    nav.toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <p class="app">LockList for Android</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: 3 October 2026</p>
+</header>
+
+<p>LockList is an Android app that shows your task list on the lock screen and keeps it in sync with your task board on the web. It is made and run by one person, Brian Chen Jun Hao ("I", "me"). This page explains, in plain words, what data the app uses, why, where it goes, and how to delete it.</p>
+
+<section class="summary" aria-labelledby="short">
+  <h2 id="short">The short version</h2>
+  <ul>
+    <li>The app uses your sign-in email and password, your tasks, and any photos you attach. Nothing else.</li>
+    <li>It uses them only to show and sync your own tasks.</li>
+    <li>No ads. No analytics. No tracking tools. I never sell your data or share it for marketing.</li>
+    <li>Your data is stored in my own Supabase project (a cloud database service) and on your phone. Everyone with a LockList account shares one task board.</li>
+    <li>You can delete tasks and photos in the app at any time. To delete your whole account, email <a href="mailto:brianchenjunhao@gmail.com">brianchenjunhao@gmail.com</a>.</li>
+  </ul>
+</section>
+
+<nav class="toc" aria-label="On this page">
+  <p>On this page</p>
+  <ol>
+    <li><a href="#collect">What the app collects</a></li>
+    <li><a href="#not-collect">What it does not collect</a></li>
+    <li><a href="#use">Why it is used</a></li>
+    <li><a href="#storage">Where it is stored</a></li>
+    <li><a href="#sharing">Who can see it</a></li>
+    <li><a href="#permissions">Phone permissions</a></li>
+    <li><a href="#delete">Keeping and deleting data</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</nav>
+
+<h2 id="collect">1. What the app collects</h2>
+
+<h3>Your sign-in details</h3>
+<p>To sign in, you type your email and password. The app sends them over an encrypted connection to the sign-in service of my Supabase project. The app does not save your password on the phone. After you sign in, the phone keeps a sign-in token (a kind of digital pass) so you stay signed in. The app has no sign-up screen: accounts are set up by me.</p>
+
+<h3>Your tasks</h3>
+<p>For each task, the app stores and syncs:</p>
+<ul>
+  <li>the title and any notes you write;</li>
+  <li>which column it is in (for example "Progressing" or "Done"), its place in the list, and whether it is Personal or Work;</li>
+  <li>when it was created, last changed, and completed;</li>
+  <li>the email of the account that last changed it;</li>
+  <li>links to any photos attached to it.</li>
+</ul>
+<p>Anything you type into a task title or note is stored as you wrote it, so please do not put passwords or other secrets in your tasks.</p>
+
+<h3>Photos you attach</h3>
+<p>You can attach a photo to a task. You pick it with Android's photo picker, so the app only gets the photo you choose, never your whole gallery. Before uploading, the app shrinks the photo and saves it again as a new picture. This also drops hidden photo details such as where it was taken. The photo is then uploaded to a private storage folder in my Supabase project.</p>
+
+<h3>Things that stay on your phone only</h3>
+<p>These are never uploaded:</p>
+<ul>
+  <li>the lock-screen wallpaper you choose (if any);</li>
+  <li>which tasks you mark as repeating every day;</li>
+  <li>your light or dark theme choice;</li>
+  <li>sync status, such as the time of the last successful sync;</li>
+  <li>small preview copies (thumbnails) of task photos, so they load quickly.</li>
+</ul>
+
+<h2 id="not-collect">2. What the app does not collect</h2>
+<ul>
+  <li>No location, contacts, calendar, camera, microphone or call history.</li>
+  <li>No advertising ID and no device fingerprinting.</li>
+  <li>No ads, no analytics, no crash-reporting or tracking tools. The app is built only with Google's Android libraries and the Supabase client library. It contains no Firebase, Google Analytics or ad code.</li>
+  <li>No selling of data, and no sharing of data with advertisers or data brokers.</li>
+</ul>
+
+<h2 id="use">3. Why it is used</h2>
+<p>Your data is used for one thing: to show your tasks on your phone and lock screen, and to keep them the same on your phone and on the web task board. Your email is used to sign you in and to mark which account last changed a task. I do not use your data to build profiles, to advertise, or to train AI models.</p>
+
+<h2 id="storage">4. Where it is stored</h2>
+<ul>
+  <li><strong>In the cloud:</strong> tasks and account details are stored in a database in my own Supabase project. Photos are stored in a private storage folder in the same project. Supabase is a cloud hosting company that stores this data for me. Its servers may be in a different country from yours.</li>
+  <li><strong>Photo links:</strong> to show a photo, the app asks for a temporary link that stops working after one hour. Photos are not public.</li>
+  <li><strong>On your phone:</strong> the app keeps a local copy of your tasks so the list shows instantly and works offline. Changes made offline are sent at the next sync.</li>
+  <li><strong>Android backup:</strong> if you have Android's own backup turned on, Android may copy the app's local data to your Google account backup. Android and your Google account control this, not me. You can turn it off in your phone's settings.</li>
+</ul>
+
+<h2 id="sharing">5. Who can see it</h2>
+<ul>
+  <li><strong>You.</strong> Your tasks show in the app and on the web task board at <a href="https://portal.brianchenhao.com">portal.brianchenhao.com</a>, which uses the same data.</li>
+  <li><strong>Other LockList accounts.</strong> LockList is a small personal app. Right now it connects to one shared task board, so every account I set up sees and can change the same tasks and photos. Only add things you are happy for them to see.</li>
+  <li><strong>Me.</strong> I run the Supabase project, so I can see the data stored there. I only look at it to run the service, fix problems, or answer your requests.</li>
+  <li><strong>Supabase.</strong> It hosts the data for me. It does not get your data to use for its own purposes.</li>
+  <li><strong>Anyone holding your phone.</strong> Showing your tasks on the lock screen is the point of the app, so task titles, notes and photos can be seen there without unlocking, and tasks can be added or moved there too. Don't put anything in LockList that you wouldn't want someone holding your phone to see.</li>
+  <li><strong>GitHub (GitHub version only).</strong> The version of LockList downloaded from GitHub asks GitHub (github.com) whether a newer version exists, and downloads it from there if you tap Install. No personal information is sent. Like any website, GitHub can see your phone's internet (IP) address. The Google Play version does not do this; Google Play handles its updates.</li>
+  <li><strong>No one else</strong>, unless the law requires me to share it.</li>
+</ul>
+
+<h2 id="permissions">6. Phone permissions</h2>
+<p>LockList asks Android for these permissions. Each one has a single job:</p>
+<dl class="perms">
+  <div class="perm">
+    <dt>Display over other apps <code>SYSTEM_ALERT_WINDOW</code></dt>
+    <dd>Lets LockList show your task list on top of the lock screen when you turn the screen on.</dd>
+  </div>
+  <div class="perm">
+    <dt>Foreground service <code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></dt>
+    <dd>Keeps a small helper running so it notices when the screen turns on. Android shows a quiet "LockList is running" notification while it runs. Before showing the list, the helper checks whether a call or an alarm is active, so it never covers them. It does not listen to or record any sound.</dd>
+  </div>
+  <div class="perm">
+    <dt>Run at startup <code>RECEIVE_BOOT_COMPLETED</code></dt>
+    <dd>Starts that helper again after your phone restarts or the app updates.</dd>
+  </div>
+  <div class="perm">
+    <dt>Notifications <code>POST_NOTIFICATIONS</code></dt>
+    <dd>Needed to show the "LockList is running" notification. The app sends no other notifications.</dd>
+  </div>
+  <div class="perm">
+    <dt>Internet and network status <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></dt>
+    <dd>Used to sync your tasks and photos, and to sync again as soon as your connection comes back.</dd>
+  </div>
+  <div class="perm">
+    <dt>Install apps <code>REQUEST_INSTALL_PACKAGES</code> (GitHub version only)</dt>
+    <dd>Lets the GitHub version install a newer version of itself, only when you tap Install. The Google Play version does not ask for this permission.</dd>
+  </div>
+</dl>
+<p>The app does not ask for location, contacts, camera, microphone or storage permissions. Photos and wallpapers are chosen with Android's own pickers, which give the app only the picture you select.</p>
+
+<h2 id="delete">7. Keeping and deleting data</h2>
+<ul>
+  <li><strong>Tasks and photos are kept until you delete them.</strong></li>
+  <li><strong>Deleting a task:</strong> delete it in the app (or on the web board). It is removed from the server at the next sync, and its photos are removed from storage a few minutes later.</li>
+  <li><strong>Removing a photo:</strong> remove it from the task in the app. The file is deleted from storage shortly after the change syncs.</li>
+  <li><strong>Signing out:</strong> stops syncing. The copy already on your phone stays until you uninstall the app or clear its data in Android settings.</li>
+  <li><strong>Uninstalling:</strong> removes everything the app saved on your phone. It does not delete your data on the server.</li>
+  <li><strong>Deleting your account and all your data:</strong> email <a href="mailto:brianchenjunhao@gmail.com?subject=LockList%20account%20deletion">brianchenjunhao@gmail.com</a> from the email address you sign in with, and ask me to delete your account. I will delete your account, your tasks and your photos within 30 days and reply to confirm. Copies in the hosting provider's routine backups may last a short time longer before those backups expire.</li>
+  <li><strong>Getting a copy of your data:</strong> email me and I will send you your tasks and photos.</li>
+</ul>
+
+<h2 id="security">8. Security</h2>
+<p>All data sent between the app and the servers uses an encrypted connection (HTTPS). Only signed-in accounts that I have approved can read or change the task data, and photos are kept in private storage that is reached through short-lived links. No system is perfectly secure, but I take reasonable care to protect your data. If I learn of a breach that affects your data, I will tell you.</p>
+
+<h2 id="children">9. Children</h2>
+<p>LockList is not made for children and is not aimed at anyone under 13. I do not knowingly collect data from children. If you think a child has given data to the app, email me and I will delete it.</p>
+
+<h2 id="changes">10. Changes to this policy</h2>
+<p>If the app starts using data in a new way, I will update this page and change the date at the top. For important changes, I will also let account holders know by email.</p>
+
+<h2 id="contact">11. Contact</h2>
+<div class="contact">
+  <p>Questions, requests, or concerns about your data:</p>
+  <p><strong>Brian Chen Jun Hao</strong>, developer of LockList<br>
+  Email: <a href="mailto:brianchenjunhao@gmail.com">brianchenjunhao@gmail.com</a><br>
+  Website: <a href="https://brianchenhao.com">brianchenhao.com</a></p>
+</div>
+
+<footer>
+  <p>LockList (package <code>com.brianchen.locklist</code>). This policy applies to the LockList Android app and its sync service.</p>
+</footer>
+
+</main>
+</body>
+</html>
